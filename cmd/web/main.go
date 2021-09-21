@@ -23,5 +23,6 @@ func main() {
 		Addr:     app.Config.Addr,
 	}
 
+	app.Info("Starting server on", app.Config.Addr)
 	app.Error(s.ListenAndServe())
 }

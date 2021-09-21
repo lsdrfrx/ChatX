@@ -1,0 +1,20 @@
+{{ template "base" .}}
+
+{{ define "title" }}
+    Вход в аккаунт
+{{ end }}
+
+{{ define "main" }}
+    <main>
+        <div class="auth">
+            <p>Войти в аккаунт</p>
+            <form action="/log" method="post">
+                <p>Логин</p>
+                <input type="text" name="username" id="username"><br>
+                <p>Пароль</p>
+                <input type="password" name="password" id="password"><br>
+                <input type="submit" value="Войти">
+            </form>
+        </div>
+    </main>
+{{ end }}

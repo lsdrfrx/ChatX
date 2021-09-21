@@ -1,6 +1,7 @@
 package application
 
 import (
+	"chattex/pkg/storage"
 	"log"
 	"net/http"
 	"os"
@@ -14,7 +15,7 @@ type Application struct {
 	Router   *mux.Router
 	ErrorLog *log.Logger
 	InfoLog  *log.Logger
-	Database *storage.DB
+	Database *storage.Database
 }
 
 func NewApplication() *Application {
